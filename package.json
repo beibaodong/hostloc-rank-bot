@@ -1,0 +1,18 @@
+{
+  "name": "hostloc-rank-bot",
+  "version": "1.0.0",
+  "description": "A bot to fetch and post Hostloc rankings to Telegram.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
