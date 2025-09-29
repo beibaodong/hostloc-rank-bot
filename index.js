@@ -52,7 +52,7 @@ async function scrapeAndPost() {
 
             if (links.length > 0) {
                 const message = `${escapeMarkdownV2(page.title)}\n\n${links.join('\n')}`;
-                await bot.sendMessage(CHANNEL_ID, message, { parse_mode: 'MarkdownV2' });
+                await bot.sendMessage(CHANNEL_ID, message, { parse_mode: 'MarkdownV2', disable_web_page_preview: true });
                 console.log(`成功发送消息: ${page.title}`);
             } else {
                 console.log(`没有找到任何链接: ${page.title}`);
